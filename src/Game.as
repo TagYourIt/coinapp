@@ -48,7 +48,7 @@ package
 			mDinoImage.rotation = deg2rad(30);
 			addChild(mDinoImage);
 			
-			mTweenDino = new Tween(mDinoImage, .75, "linear");
+			mTweenDino = new Tween(mDinoImage, 1.0, "linear");
 			mTweenDino.moveTo(mDinoImage.x, 200);
 			mTweenDino.repeatCount = 0;//0 is infinite
 			mTweenDino.reverse = true;
