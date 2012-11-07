@@ -49,7 +49,7 @@ package
 			addChild(mDinoImage);
 			
 			mTweenDino = new Tween(mDinoImage, 1.0, "linear");
-			mTweenDino.moveTo(mDinoImage.x, 200);
+			mTweenDino.moveTo(mDinoImage.x, 320);
 			mTweenDino.repeatCount = 0;//0 is infinite
 			mTweenDino.reverse = true;
 			Starling.juggler.add(mTweenDino);
