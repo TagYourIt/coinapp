@@ -1,6 +1,8 @@
 package 
 {
 	
+	import starling.animation.Tween;
+	import starling.core.Starling;
 	import starling.display.Image;
 	import starling.display.Sprite;
 	import starling.events.Event;
@@ -16,6 +18,9 @@ package
 	{
 		//Variables here, make sure to use private, protected, or public
 		private var mDinoImage:Image;
+		
+		//Tween
+		private var mTweenDino:Tween;
 		
 		
 		public function Game()
@@ -42,6 +47,16 @@ package
 			mDinoImage.y = Constants.CenterY;
 			mDinoImage.rotation = deg2rad(30);
 			addChild(mDinoImage);
+			
+			mTweenDino = new Tween(mDinoImage, .75, "linear");
+			mTweenDino.moveTo(mDinoImage.x, 200);
+			mTweenDino.repeatCount = 0;//0 is infinite
+			mTweenDino.reverse = true;
+			Starling.juggler.add(mTweenDino);
+			
+			
+			
+			
 			
 		}
 		
