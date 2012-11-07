@@ -1,9 +1,11 @@
 package 
 {
 	
+	import starling.display.Image;
 	import starling.display.Sprite;
 	import starling.events.Event;
 	import starling.text.TextField;
+	import starling.utils.deg2rad;
 
 	//import starling.events.ResizeEvent;
 	//import starling.events.TouchEvent;
@@ -13,6 +15,8 @@ package
 	public class Game extends Sprite
 	{
 		//Variables here, make sure to use private, protected, or public
+		private var mDinoImage:Image;
+		
 		
 		public function Game()
 		{
@@ -30,6 +34,14 @@ package
 			var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
 			textField.x = Constants.CenterX;
 			addChild(textField);
+			
+			mDinoImage = new Image(Assets.getTextureAtlas().getTexture("dino"));
+			mDinoImage.pivotX = mDinoImage.width/2;//center pivot
+			mDinoImage.pivotY = mDinoImage.height/2;
+			mDinoImage.x = Constants.CenterX;
+			mDinoImage.y = Constants.CenterY;
+			mDinoImage.rotation = deg2rad(30);
+			addChild(mDinoImage);
 			
 		}
 		

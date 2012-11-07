@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:3d54fe9968a201aaf330fe6098d74b27$ -->
+<TextureAtlas imagePath="textures2x.png">
+    <SubTexture name="dino@2x" x="2" y="2" width="798" height="566"/>
+    <SubTexture name="textures2x" x="2" y="2" width="798" height="566" frameX="-2" frameY="-2" frameWidth="1024" frameHeight="1024"/>
+</TextureAtlas>
