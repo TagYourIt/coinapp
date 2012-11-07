@@ -1,9 +1,6 @@
 package 
 {
 	
-	
-	
-	
 	import starling.display.Sprite;
 	import starling.events.Event;
 
@@ -31,8 +28,6 @@ package
 			//this is where the magic happens
 			
 		}
-		
-		
 		
 		
 		public override function dispose():void	
