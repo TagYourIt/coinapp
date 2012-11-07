@@ -12,7 +12,7 @@ package
 	
 	public class Game extends Sprite
 	{
-		
+		//Variables here, make sure to use private, protected, or public
 		
 		public function Game()
 		{
@@ -28,6 +28,7 @@ package
 		{
 			//this is where the magic happens
 			var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
+			textField.x = Constants.CenterX;
 			addChild(textField);
 			
 		}
