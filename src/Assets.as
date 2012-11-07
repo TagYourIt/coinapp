@@ -13,6 +13,7 @@ package
 	import starling.text.TextField;
 	import starling.textures.Texture;
 	import starling.textures.TextureAtlas;
+
 	
 	public class Assets
 	{

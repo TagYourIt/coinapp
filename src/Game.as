@@ -3,6 +3,7 @@ package
 	
 	import starling.display.Sprite;
 	import starling.events.Event;
+	import starling.text.TextField;
 
 	//import starling.events.ResizeEvent;
 	//import starling.events.TouchEvent;
@@ -26,6 +27,8 @@ package
 		private function init():void
 		{
 			//this is where the magic happens
+			var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
+			addChild(textField);
 			
 		}
 		
