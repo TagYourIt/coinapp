@@ -12,10 +12,10 @@ package
 		
 		// Texture Atlas
 		
-		[Embed(source="../media/textures/1x/textures1x.xml", mimeType="application/octet-stream")]
+		[Embed(source="../media/textures/1x/textures.xml", mimeType="application/octet-stream")]
 		public static const AtlasXml:Class;
 		
-		[Embed(source="../media/textures/1x/textures1x.png")]
+		[Embed(source="../media/textures/1x/textures.png")]
 		public static const AtlasTexture:Class;
 		
 		// Bitmap Fonts
