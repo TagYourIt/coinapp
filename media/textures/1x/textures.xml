@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5c9662bb37a78f3ebb27904de03b46f8$ -->
+<TextureAtlas imagePath="textures.png">
+    <SubTexture name="dino" x="2" y="287" width="399" height="283"/>
+    <SubTexture name="dinoRed" x="2" y="2" width="399" height="283"/>
+    <SubTexture name="playButton" x="2" y="572" width="130" height="130"/>
+</TextureAtlas>
