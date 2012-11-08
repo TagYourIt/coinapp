@@ -6,6 +6,9 @@ package
 	import starling.display.Image;
 	import starling.display.Sprite;
 	import starling.events.Event;
+	import starling.events.Touch;
+	import starling.events.TouchEvent;
+	import starling.events.TouchPhase;
 	import starling.text.TextField;
 	import starling.utils.deg2rad;
 
@@ -48,11 +51,14 @@ package
 			mDinoImage.rotation = deg2rad(30);
 			addChild(mDinoImage);
 			
-			mTweenDino = new Tween(mDinoImage, 1.0, "linear");
+			/*mTweenDino = new Tween(mDinoImage, 1.0, "linear");
 			mTweenDino.moveTo(mDinoImage.x, 320);
 			mTweenDino.repeatCount = 0;//0 is infinite
 			mTweenDino.reverse = true;
-			Starling.juggler.add(mTweenDino);
+			Starling.juggler.add(mTweenDino);*/
+			
+			//Touch Dino
+			mDinoImage.addEventListener(TouchEvent.TOUCH, onDinoTouched);
 			
 			
 			
@@ -60,6 +66,20 @@ package
 			
 		}
 		
+		private function onDinoTouched(event:TouchEvent):void
+		{
+			// TODO Auto Generated method stub
+			var touch:Touch = event.getTouch(mDinoImage);
+			if(touch.phase == TouchPhase.BEGAN){
+				mDinoImage.x = touch.globalX;
+				mDinoImage.y = touch.globalY;
+			}
+			
+			if(touch.phase == TouchPhase.MOVED){
+				mDinoImage.x = touch.globalX;
+				mDinoImage.y = touch.globalY;
+			}
+		}		
 		
 		public override function dispose():void	
 		{
