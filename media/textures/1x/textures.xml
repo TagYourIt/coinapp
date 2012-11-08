@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://texturepacker.com-->
-<!-- $TexturePacker:SmartUpdate:5c9662bb37a78f3ebb27904de03b46f8$ -->
+<!-- $TexturePacker:SmartUpdate:c39f0ee9859ea49300735f27ac4d78ed$ -->
 <TextureAtlas imagePath="textures.png">
     <SubTexture name="dino" x="2" y="287" width="399" height="283"/>
     <SubTexture name="dinoRed" x="2" y="2" width="399" height="283"/>
